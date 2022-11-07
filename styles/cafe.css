@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    /* background-image: url(image/bgLight.png); */
+    background-size: contain;
+    transition: background-image .5s ease-in-out
+    
+   
+}
+
+.dark-mode {
+    background-image: url(image/bgDark.png);
+    background-size: contain;
+    
+    transition: background-image .5s ease-in-out
+    
+    
+}
+#yudBackground{
+    mask-image: url(image/bgLight.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; 
+    z-index:-2;
+    
+}
+
+.topcontent{
+    position: relative;
+    min-height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 251, 251);
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+    margin: 0 auto;
+    /* z-index: 1; */
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-size: 22px;
+
+}
+
+.menu ul li a {
+    filter: drop-shadow(0 0 10px rgb(245, 245, 245))drop-shadow(0 0 15px rgb(248, 246, 246));
+    color: rgb(0, 0, 0);
+
+}
+
+.menu ul li a:hover {
+    color: rgb(247, 190, 115);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+    /* margin: 24px; */
+    width: 50px;
+    height: 50px;
+    animation: zoom-in-zoom-out 0.3s ease infinite;
+}
+
+@media screen and (max-width: 835px) {
+    .menu {display: block;}
+    .menu ul {display: block;}
+  }
+
+.nav-menu1{
+    display: flex;
+}
+
+#exampleModal {
+    color: black;
+}
+
+#inputTimer {
+    text-align: center;
+    border-radius: 15px;
+    width: 50px;
+    height: 49px;
+}
+
+#btnSwiftMode1:hover,
+#btnSwiftMode2:hover,
+#btnTimer1:hover,
+#btnTimer2:hover {
+    filter: drop-shadow(0 0 20px rgb(245, 245, 245))drop-shadow(0 0 50px rgb(248, 246, 246));
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.modal-title {
+    color:black;
+    padding-top:10px;
+}
+
+#textUsername {
+    background-image: url(image/yoyo.gif);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #fff;
+    /* font-size: 1.5em; */
+    padding: 0.5em;
+    width: 100%;
+
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* มายนัด */
+.coffeeshop {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    padding: 100px 100px 100px;
+    max-width: 100vw;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.heading h3 {
+    font-size: 4rem;
+    color: var(--black);
+    font-family: 'Merienda One', cursive;
+}
+
+.heading1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    color: darkslategrey;
+    filter: drop-shadow(0 0 10px rgb(245, 245, 245))drop-shadow(0 0 15px rgb(248, 246, 246));
+}
+.heading1 span{
+    color: crimson;
+}
+.coffeeshop .box-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 45rem);
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* .coffeeshop .box1 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem;
+    max-width: 500px;
+    max-height: 700px;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0 0 10px rgb(245, 245, 245))drop-shadow(0 0 15px rgb(248, 246, 246));
+} */
+.dark-mode .box1 {
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem;
+    max-width: 500px;
+    max-height: 700px;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(0 0 10px rgb(253, 201, 132))drop-shadow(0 0 15px rgb(253, 201, 132));
+
+}
+/* New */
+.coffeeshop .box-container1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.coffeeshop .box-container1 .box1{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1 rem rgba(0, 0, 0, .1);
+    /* border: 1rem solid rgba(0, 0, 0, .3); */
+    cursor: pointer;
+    border-radius: .5rem;
+    min-height: 350px;
+}
+.coffeeshop .box-container1 .box1 .image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%; left: 0;
+    transition: all .3s ease;
+}
+.coffeeshop .box-container1 .box1 .content1{
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    min-height: 350px;
+}
+.coffeeshop .box-container1 .box1 .content1 img{
+    margin: 1.5rem 0;
+
+}
+.coffeeshop .box-container1 .box1 .content1 h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.coffeeshop .box-container1 .box1 .content1 p{
+    font-size: 1.8rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.coffeeshop .box-container1 .box1:hover .image{
+    top: 0;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.icons i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    background: #eee;
+    color:var(--black);
+    text-align: center;
+}
+.icons .cotenti h3{
+    color: var(--yellow);
+    font-size: 2.5rem;
+}
+.icons:hover i{
+    background: var(--yellow);
+}
+.icons:hover .cotenti h3{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.coffeebar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 2rem;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.coffeebar .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.coffeebar .box-container .box {
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 30rem;
+    position: relative;
+}
+
+.coffeebar .box-container .box:hover{
+    padding: 10px;
+    border: 1px solid var(--black);
+    transition: 0.4s;
+}
+
+.coffeebar .box-container .box .active{
+    display: inline-block;
+}
+
+.coffeebar .box-container .box img {
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.coffeebar .box-container .box .price {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.coffeebar .box-container .box h3 {
+    color: #333;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.coffeebar.box-container.box.buttons{
+   display: flex;
+   gap:1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+   border-radius: 8px;
+
+}
+
+.coffeebar.box-container.box.buttons a{
+    flex:1 1 16rem;
+    padding:1rem;
+    font-size: 1.8rem;
+    width: 50%;
+    color:rgb(0, 0, 0);
+    border:.1rem solid #444;
+ }
+
+.coffeebar.box-container.box.buttons a .btn-cart{
+    background-color: white;
+    color: black;
+    border: 2px solid #84673d;
+ }
+
+.coffeebar.box-container.box.buttons a .btn-cart:hover{
+    background-color: #84673d;
+    color: rgb(0, 0, 0);
+ }

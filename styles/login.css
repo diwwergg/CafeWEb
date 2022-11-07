@@ -1,0 +1,89 @@
+html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(image/bogdan-mb0sco-jazzhopcafef-exampleanim.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(231, 140, 4);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    filter: drop-shadow(0 0 20px rgb(231, 140, 4))drop-shadow(0 0 50px rgb(231, 140, 4));
+    color: rgb(240, 241, 243);
+    text-align: center;
+    
+  }
+  
+  
+  
+  .login-box .user-box {
+    position: relative;
+    
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+  
+  
+  
+  .login-box button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #47371f8a;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    
+  }
+  
+  .login-box button:hover  {
+    
+    color: rgb(245, 245, 245);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #f6f5f7, 0 0 25px #ecebf0, 0 0 50px #efeff1,
+      0 0 100px #e8e7ee;
+      
+  }
