@@ -241,7 +241,7 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  margin-top: 15px;
+  margin-bottom: 20%;
 }
 
 .theme-selector .body a.light {
@@ -342,8 +342,12 @@
   transition: .2s;
   -webkit-transition-timing-function: linear;
           transition-timing-function: linear;
+} 
+.btn-search {
+  content: url("https://i.ibb.co/wpPD8GJ/search-white.png");
+  width: 54px;
+  height: 54px;
 }
-
 .header .overlay {
   position: absolute;
   left: 0;
@@ -518,6 +522,21 @@ body.light-theme .header {
   background-image: url(../styles/image/header-light.png);
 }
 
+body.light-theme .btn-search {
+  content: url("https://i.ibb.co/DpwT6gm/search.png");
+}
+
+.logo{
+  border-radius: 75px;
+  margin-left: -150px;
+  content: url("https://i.ibb.co/S5Xzkwb/logo-white.png");
+}
+
+body.light-theme .logo{
+  border-radius: 75px;
+  margin-left: -150px;
+  content: url("https://i.ibb.co/yNWkSmM/logo-black.png");
+}
 body.light-theme .header .overlay {
   background-image: -webkit-radial-gradient(48% 42%, 140% 110%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.93), #fff 55%, #fff 200%);
   background-image: radial-gradient(1500% 300% at 48% 42%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.93), #fff 55%, #fff 200%);
@@ -555,7 +574,7 @@ body.light-theme .card .card-subtitle {
   color: #212529;
 }
 
-body.light-theme .form-control {
+body.light-theme .form-control  {
   border-color: #adb5bd;
   background: rgba(206, 212, 218, 0.6);
   color: #343a40;
@@ -602,6 +621,9 @@ body.light-theme .contact-section .footer .links a {
   color: #212529;
 }
 
-body.dark-theme {
+body.dark-theme  {
   background: #212529;
+}
+.modal-bottom, .modal-top{
+  
 }

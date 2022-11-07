@@ -209,7 +209,7 @@ ul {
     color: rgb(0, 0, 0);
     filter: drop-shadow(0 0 10px rgb(245, 245, 245))drop-shadow(0 0 15px rgb(248, 246, 246));
 } */
-.dark-mode .box1 {
+  .dark-theme .box1 {
     /* background-color: rgb(0, 0, 0); */
     border-radius: 1rem;
     padding: 2rem;
@@ -273,35 +273,6 @@ ul {
     top: 0;
 }
 
-.icons{
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 2rem;
-    background: #fff;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
-}
-.icons i{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2.5rem;
-    border-radius: 50%;
-    background: #eee;
-    color:var(--black);
-    text-align: center;
-}
-.icons .cotent h3{
-    color: var(--yellow);
-    font-size: 2.5rem;
-}
-.icons:hover i{
-    background: var(--yellow);
-}
-.icons:hover .cotent h3{
-    color: #fff;
-}
 
 
 
@@ -416,7 +387,7 @@ ul {
     padding-top: 1rem;
 }
 
-.coffeebar.box-container.box.buttons{
+.coffeebar.box-container.box.buttonsCart{
    display: flex;
    gap:1.5rem;
    flex-wrap: wrap;
@@ -424,7 +395,7 @@ ul {
 
 }
 
-.coffeebar.box-container.box.buttons a{
+.coffeebar.box-container.box.buttonsCart h5{
     flex:1 1 16rem;
     padding:1rem;
     font-size: 1.8rem;
@@ -432,16 +403,16 @@ ul {
     border:.1rem solid #444;
  }
 
-.coffeebar.box-container.box.buttons a .btn-add{
+.coffeebar.box-container.box.buttonsCart h5 .btn-cart{
     background: #444;
     color:#fff;
  }
 
-.coffeebar.box-container.box.buttons a .btn-add:hover{
+.coffeebar.box-container.box.buttonsCart h5 .btn-cart:hover{
     background: #111;
  }
 
- .coffeebar.box-container.box.buttons a .btn-buy:hover{
+ .coffeebar.box-container.box.buttonsCart h5 .btn-buy:hover{
     background: #444;
     color:#fff;
  }

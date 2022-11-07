@@ -1,4 +1,7 @@
-
+.play-btn-inner{
+    opacity: 0.6;
+     
+}
 .body-content {
     z-index: 990;
     position: relative;
@@ -26,7 +29,7 @@
         
         
 }
- 
+
 .block-content  {
 
     opacity: 1;

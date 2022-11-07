@@ -126,23 +126,34 @@ const UIController = (function() {
         },
         createTrack(img,artist,id, name) {
             const html = `
+            <div class="row">
+             <div class="col">
+                    <img src="${img}" />
+                 </div>
+            <div class="col">
+                    <h5 class="card-title">${artist}</h5>
+                    <h6 class="card-title">${name}</h6>
+            </div>
+            <div class="col">
+            <h5 class="card-title">${artist}</h5>
+            <h6 class="card-title">${name}</h6>
+    </div>
+            </div>
             <div class="col-lg-4">
                 <div class="card card-margin">
                     <div class="card-body pt-0">
                     <div class="widget-49">
                         <div class="widget-49-title-wrapper">
                         <div class="widget-49-date-primary">
-                            <span class="widget-49-date-day">09</span>
-                            <span class="widget-49-date-month">apr</span>
+                        
                         </div>
                         <div class="widget-49-meeting-info">
-                            <h5 class="card-title">${artist}</h5>
+                        
                         </div>
                     </div>
-                    <ol class="widget-49-meeting-points">
-                    <h6 class="card-title">${name}</h6>
+                    <ul class="widget-49-meeting-points">
                     <a href="#" class="list-group-item list-group-item-action list-group-item-light" data-dismiss="modal" id="${id}"><img src="https://i.ibb.co/hRRKtVM/play.png" alt="play" border="0" /></a>
-                    </ol>
+                    </ul>
                     <div class="widget-49-meeting-action">
                     </div>
                 </div>
